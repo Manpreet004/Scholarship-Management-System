@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scholarship Information system</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+</head>
+
+<body style="background: url(img/bg6.jpg); background-size: cover; background-attachment: fixed;">
+    <nav class="navbar navbar-expand-lg container-fluid d-flex align-item-center justify-content-between">
+
+        <div class="d-flex align-item-center">
+            <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top mx-3">
+            <a class="navbar-brand my-auto" href="index.html"><span class="">Scholarship</span> Information
+                System </a>
+
+        </div>
+        <div class="mx-5" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger active" aria-current="page" href="reg.html">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="container pt-5">
+        <div class="d-flex justify-content-center flex-column my-5">
+
+            <form class="row g-3 mt-2 mx-auto reg-box">
+                <p class="display-6 my-3 mb-5">
+                    Apply For Scholarship
+                </p>
+
+
+                <!-- <ul class="nav nav-tabs col-md-12 my-5 mx-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="list-details-list" data-bs-toggle="list" href="#list-details"
+                            role="tab" aria-controls="list-details">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" id="list-documents-list" data-bs-toggle="list"
+                            href="#list-documents" role="tab" aria-controls="list-documents">Documents</a>
+                    </li>
+                </ul> -->
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">Details</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false">Documents</button>
+                    </li>
+                    <!-- <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                            aria-selected="false">Contact</button>
+                    </li> -->
+                    
+                </ul>
+
+                <div class="tab-content mt-5" id="myTabContent">
+                    <div class="tab-pane fade show active " id="home-tab-pane" role="tabpanel"
+                        aria-labelledby="home-tab" tabindex="0">
+                        <div class="d-flex flex-wrap justify-content-center">
+
+
+                            <div class="col-md-5 mx-4 my-2">
+                                <label for="stu-id" class="form-label">Student-ID</label>
+                                <input type="number" class="form-control" id="stu-id">
+                            </div>
+                            <div class="col-md-5 mx-4 my-2">
+                                <label for="stu-name" class="form-label">Student Name</label>
+                                <input type="text" class="form-control" id="stu-name">
+                            </div>
+                            <div class="col-md-5 mx-4 my-2">
+                                <label for="text" class="form-label">Username</label>
+                                <input type="email" class="form-control" id="text">
+                            </div>
+                            <div class="col-md-5 mx-4 my-2">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-md-5 mx-4 my-2">
+                                <label for="phn-no" class="form-label">Phone-No.</label>
+                                <input type="tel" class="form-control" id="phn-no">
+                            </div>
+                            <div class="col-md-5 mx-4 my-2">
+                                <label for="Attendence" class="form-label">Attendence</label>
+                                <input type="number" class="form-control" id="Attendence">
+                            </div>
+                            <div class="col-md-5 mx-4 my-2">
+                                <label for="course" class="form-label">Course</label>
+                                <input type="text" class="form-control" id="course">
+                            </div>
+                            <div class="col-md-5 mx-4 my-2">
+                                <label for="category" class="form-label">Category</label>
+                                <input type="text" class="form-control" id="category">
+                            </div>
+                            <div class="col-md-5 mx-4 my-2">
+                                <label for="income" class="form-label">Income</label>
+                                <input type="number" class="form-control" id="income">
+                            </div>
+                            <div class="col-md-5 mx-4 my-2">
+                                <label for="roll_no" class="form-label">Roll No</label>
+                                <input type="number" class="form-control" id="roll_no">
+                            </div>
+                            <div class="col-md-12 mx-5 text-end mt-5">
+                                <button  class="btn btn-primary col-md-2">Next</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <div class="card2">
+                            <h3 class="my-3 fw-normal">Upload Bank Passbook </h3>
+                            <div class="drop_box">
+                                <header>
+                                    <h4>Select File here</h4>
+                                </header>
+                                <p>Files Supported: PDF, JPG</p>
+                                <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+                                <button class="btn btn-outline-primary">Choose File</button>
+                            </div>
+
+                        </div>
+                        <div class="card2">
+                            <h3 class="my-3 fw-normal">Upload Adhar Card </h3>
+                            <div class="drop_box">
+                                <header>
+                                    <h4>Select File here</h4>
+                                </header>
+                                <p>Files Supported: PDF, JPG</p>
+                                <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+                                <button class="btn btn-outline-primary">Choose File</button>
+                            </div>
+
+                        </div>
+                        <div class="card2">
+                            <h3 class="my-3 fw-normal">Upload Income Certificate</h3>
+                            <div class="drop_box">
+                                <header>
+                                    <h4>Select File here</h4>
+                                </header>
+                                <p>Files Supported: PDF, JPG</p>
+                                <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+                                <button class="btn btn-outline-primary">Choose File</button>
+                            </div>
+
+                        </div>
+                        <div class="card2">
+                            <h3 class="my-3 fw-normal">Upload ID Card</h3>
+                            <div class="drop_box">
+                                <header>
+                                    <h4>Select File here</h4>
+                                </header>
+                                <p>Files Supported: PDF, JPG</p>
+                                <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+                                <button class="btn btn-outline-primary">Choose File</button>
+                            </div>
+
+                        </div>
+                        <div class="card2">
+                            <h3 class="my-3 fw-normal">Upload DMC</h3>
+                            <div class="drop_box">
+                                <header>
+                                    <h4>Select File here</h4>
+                                </header>
+                                <p>Files Supported: PDF, JPG</p>
+                                <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+                                <button class="btn btn-outline-primary">Choose File</button>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-12 mx-5 text-end mt-5">
+                            <button type="submit" class="btn btn-primary col-md-2">Next</button>
+                        </div>
+                    </div>
+                    <!-- <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">...</div>
+                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                        tabindex="0">...</div> -->
+                </div>
+
+
+
+
+
+
+                
+            </form>
+        </div>
+    </div>
+
+
+    <script src="bootstrap.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
